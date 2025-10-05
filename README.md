@@ -15,9 +15,9 @@
 
 ### טכנולוגיות
 * **שפה:** Python 3.x
-* **בסיס נתונים:** SQLite3 (מובנה, ללא צורך בהתקנה נוספת)
-* **ארכיטקטורה:** עיצוב מודולרי מבוסס פונקציות.
-
+* **בסיס נתונים:** SQLite3 (מובנה, ללא צורך בהתקנה נוספת).
+* **ארכיטקטורה:** עיצוב מודולרי מבוסס פונקציות (Modular Design), להפרדת הלוגיקה.
+* **אבטחת נתונים:** שימוש ב**פרמטרים מוגנים** (Parameterized Queries) למניעת SQL Injection.
 
 ### התקנה והפעלה
 
@@ -27,17 +27,20 @@
     ```bash
     git clone [https://github.com/yael-shr/python-Book-Manager.git](https://github.com/yael-shr/python-Book-Manager.git)
     cd python-Book-Manager
-    ```
+   
 
 2.  **יצירת והפעלת סביבה וירטואלית (Venv):**
-    ```bash
-    python -m venv venv
-    .\venv\Scripts\activate  # ב-Windows PowerShell
-    ```
+   ```bash
+   python -m venv venv
+   .\venv\Scripts\activate  # Windows (CMD/PowerShell)
+   source venv/bin/activate # Linux/Mac OS
+  
+*זה מוכיח שאת מתכננת שהקוד ירוץ בכל מקום.*
 
 3.  **הרצת היישום:**
     ```bash
     python app.py
-    ```
-
-המערכת תופעל ותציג את תפריט ה-CLI, ותיצור את קובץ `books.db` בעת ההרצה הראשונה.
+  
+---
+### הפעלה ראשונית
+המערכת תופעל אוטומטית ותיצור את קובץ **books.db** בתיקייה בעת ההרצה הראשונה..
